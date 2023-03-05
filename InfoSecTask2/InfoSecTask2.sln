@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfoSecTask2", "InfoSecTask2\InfoSecTask2.csproj", "{71D82AE4-91EB-4DAE-8A5E-AA1179D38F6E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{71D82AE4-91EB-4DAE-8A5E-AA1179D38F6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71D82AE4-91EB-4DAE-8A5E-AA1179D38F6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71D82AE4-91EB-4DAE-8A5E-AA1179D38F6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71D82AE4-91EB-4DAE-8A5E-AA1179D38F6E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {67EBBEE2-8D16-4D23-8E0C-8B7279704116}
+	EndGlobalSection
+EndGlobal
