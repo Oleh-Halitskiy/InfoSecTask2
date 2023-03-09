@@ -6,7 +6,7 @@ namespace InfoSecTask2
     internal class DecryptionFunctions
     {
 
-        public static void CBC()
+        public static void CBC(bool ConsoleMode)
         {
             Console.Write("Enter 1 for encryption, 2 for decryption: ");
             string input = Console.ReadLine();
@@ -39,8 +39,22 @@ namespace InfoSecTask2
             }
             else if (input == "2")
             {
-                Console.Write("Enter encrypted text: ");
-                string encryptedString = Console.ReadLine();
+                string path;
+                string encryptedString;
+                if (ConsoleMode)
+                {
+                    Console.Write("Enter encrypted text: ");
+                    encryptedString = Console.ReadLine();
+                }
+                else
+                {
+                    Console.Write("Please enter path to file: ");
+                    path = Console.ReadLine();
+                    using(StreamReader sr = new StreamReader(path))
+                    {
+                        encryptedString = sr.ReadToEnd();
+                    }
+                }
                 Console.Write("Enter key: ");
                 string key = Console.ReadLine();
                 Console.Write("Enter IV: ");
@@ -66,7 +80,7 @@ namespace InfoSecTask2
             }
         }
 
-        public static void CFB()
+        public static void CFB(bool ConsoleMode)
         {
             Console.Write("Enter 1 for encryption, 2 for decryption: ");
             string input = Console.ReadLine();
@@ -99,8 +113,22 @@ namespace InfoSecTask2
             }
             else if (input == "2")
             {
-                Console.Write("Enter encrypted text: ");
-                string encryptedString = Console.ReadLine();
+                string path;
+                string encryptedString;
+                if (ConsoleMode)
+                {
+                    Console.Write("Enter encrypted text: ");
+                    encryptedString = Console.ReadLine();
+                }
+                else
+                {
+                    Console.Write("Please enter path to file: ");
+                    path = Console.ReadLine();
+                    using (StreamReader sr = new StreamReader(path))
+                    {
+                        encryptedString = sr.ReadToEnd();
+                    }
+                }
                 Console.Write("Enter key: ");
                 string key = Console.ReadLine();
                 Console.Write("Enter IV: ");
@@ -126,7 +154,7 @@ namespace InfoSecTask2
             }
         }
 
-        public static void ECB()
+        public static void ECB(bool ConsoleMode)
         {
             Console.Write("Enter 1 for encryption, 2 for decryption: ");
             string input = Console.ReadLine();
@@ -154,8 +182,22 @@ namespace InfoSecTask2
             }
             else if (input == "2")
             {
-                Console.Write("Enter encrypted text: ");
-                string encryptedString = Console.ReadLine();
+                string path;
+                string encryptedString;
+                if (ConsoleMode)
+                {
+                    Console.Write("Enter encrypted text: ");
+                    encryptedString = Console.ReadLine();
+                }
+                else
+                {
+                    Console.Write("Please enter path to file: ");
+                    path = Console.ReadLine();
+                    using (StreamReader sr = new StreamReader(path))
+                    {
+                        encryptedString = sr.ReadToEnd();
+                    }
+                }
                 Console.Write("Enter key: ");
                 string key = Console.ReadLine();
                 byte[] encryptedBytes = Convert.FromBase64String(encryptedString);
